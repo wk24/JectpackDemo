@@ -26,18 +26,18 @@ class MyObserver2 : DefaultLifecycleObserver {
         Log.e("MyObserver2", "onResume: ")
     }
 
-    override fun onPause(owner: LifecycleOwner) {
-        super.onPause(owner)
-        Log.e("MyObserver2", "onPause: ")
-    }
-
-    override fun onStop(owner: LifecycleOwner) {
-        super.onStop(owner)
-        Log.e("MyObserver2", "onStop: ")
-    }
-
-    override fun onDestroy(owner: LifecycleOwner) {
-        super.onDestroy(owner)
-        Log.e("MyObserver2", "onDestroy: ")
-    }
+//    override fun onPause(owner: LifecycleOwner) {
+//        super.onPause(owner)
+//        Log.e("MyObserver2", "onPause: ")
+//    }
+//
+//    override fun onStop(owner: LifecycleOwner) {
+//        super.onStop(owner)
+//        Log.e("MyObserver2", "onStop: ")
+//    }
+//
+//    override fun onDestroy(owner: LifecycleOwner) {
+//        super.onDestroy(owner)
+//        Log.e("MyObserver2", "onDestroy: ")
+//    }
 }

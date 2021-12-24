@@ -5,7 +5,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.wuk.livedatademo.R
-import com.wuk.livedatademo.simple1.MyLiveData
 import kotlin.concurrent.thread
 
 class MainActivity1 : AppCompatActivity() {
@@ -22,29 +21,6 @@ class MainActivity1 : AppCompatActivity() {
                 textView.text = t // 更新UI
             }
        })
-
-        // 完整写法 new  Observer  onChanged
-        MyLiveData.info1.observe(this, object: Observer<String> {
-            override fun onChanged(t: String?) {
-                textView.text = t // 更新UI
-            }
-        })
-
-        // 完整写法 new  Observer  onChanged
-        MyLiveData.info1.observe(this, object: Observer<String> {
-            override fun onChanged(t: String?) {
-                textView.text = t // 更新UI
-            }
-        })
-
-
-        // 完整写法 new  Observer  onChanged
-        MyLiveData.info1.observe(this, object: Observer<String> {
-            override fun onChanged(t: String?) {
-                textView.text = t // 更新UI
-            }
-        })
-
 
         // 完整写法 new  Observer  onChanged
         MyLiveData.info1.observe(this, object: Observer<String> {

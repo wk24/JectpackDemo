@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val myView: MyView = findViewById<MyView>(R.id.my_view);
 
-        lifecycle.addObserver(MyObserver())
+//        lifecycle.addObserver(MyObserver())
         lifecycle.addObserver(MyObserver2())
         lifecycle.addObserver(myView)
     }

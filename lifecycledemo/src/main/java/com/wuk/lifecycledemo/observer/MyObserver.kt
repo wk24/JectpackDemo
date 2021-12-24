@@ -11,13 +11,13 @@ import androidx.lifecycle.OnLifecycleEvent
  */
 class MyObserver : LifecycleObserver {
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+    @OnLifecycleEvent(Lifecycle.Event.ON_START)
     fun ontestResume(){
-        Log.e("TAG", "ontestResume: " )
+        Log.e("TAG", "ontestSTART: " )
     }
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
+    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     fun ontestPause(){
-        Log.e("TAG", "ontestPause: " )
+        Log.e("TAG", "ontestSTOP: " )
     }
 }
